@@ -92,7 +92,9 @@ export class App extends Component {
         }else{
             if(aggrement){
                 alert('Berhasil, Data sudah tersimpan.')
-                console.log(data_RT, data_RW, data_alamat, data_alasanBuntuan, data_fotoKK, data_fotoKTP, data_jenisKelamin, data_nama, data_nik, data_noKK, data_penghasilanSebelum, data_penghasilanSetelah ,data_umur)
+                console.log(
+                    `nama: ${data_nama}, nik: ${data_nik}, Nomor KK : ${data_noKK}, foto ktp : ${data_fotoKTP}, foto kk : ${data_fotoKK}, umur: ${data_umur}, jenis kelamin: ${data_jenisKelamin}, alamat: ${data_alamat}, rt: ${data_RT}, rw: ${data_RW}, penghasilan sebelum pandemic: ${data_penghasilanSebelum}, penghasilan setelah pandemic: ${data_penghasilanSetelah}, alasan butuh bantuan: ${data_alasanBuntuan}` 
+                )
             }else{
                 alert("Silahkan Centang Pernyataan di bawah")
             }
